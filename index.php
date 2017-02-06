@@ -1,49 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Liste des musées de France</title>
-	<meta charset="utf-8">
-	<!-- <link rel="stylesheet" type="text/css" href="./Bootstrap/css/boostrap.css"> -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title></title>
 </head>
 <body>
 
 
-
-
-<!-- <div class="container">
-	<div class="row">
-        <div class="col-md-6">
-    		<h2>Rechercher un musée</h2>
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input action ="search.php" method="GET" type="text" class="form-control input-lg" placeholder="Tapez votre recherhe" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </div>
-	</div>
-</div> -->
-
-
-
-
-
-
-<form action ="search.php" method="GET">
-	<span>Recherche par nom :</span> 
-	<input type="text" id="search" name="search"/>
-	<input type="submit" value="Envoyer">
-</form></br>
-
-
-
-
-
+	<form type="search" method="GET">
+		<input type="text" id="search" name="q"/>
+		<input type="submit" value="valider">
+	</form></br>
 	<?php
 //Connection à la bdd
 	try{
@@ -55,15 +21,38 @@
 	}
 
 
-
 	$reponse = $bdd->query('SELECT * FROM listemusees');
 
-	while ($donnees = $reponse->fetch()){
+	if(isset($_GET['q']) AND !empty($_GET['q']))
+	{
+		$q = htmlspecialchars($_GET['q']);
+
+		$reponse = $bdd->query('SELECT * FROM listemusees WHERE CONCAT(cp, ville, nom_reg, nom_dep, nom_du_musee) LIKE "%'.$q.'%" ORDER BY id DESC');
+    }
+
+	else
+	{
+		echo "Aucune recherche"."<br>";
+	}
+
+	while ($donnees = $reponse->fetch())
+	{
+		if($donnees['nom_du_musee'] == '')
+		{
+			echo "Il n'y aucun résultat pour votre recherche. Veuillez faire une recherche valide";
+		}
+
+		$web =$donnees['site_web'];
+
+		include_once('html/simple_html_dom.php');
+		$musee=$donnees['nom_du_musee'] . $donnees['ville'];
+		$musee=str_replace(' ','+',$musee);
+		$lienHTML =file_get_html("https://www.google.fr/search?q=$musee&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjmwoqgm_vRAhXKExoKHaj4BL0Q_AUICSgC&biw=1920&bih=974");
+		$image = $lienHTML->find('img', 0)->src;
+		echo '<img src="'.$image.'">';
 
 		?>
-
 		<!-- Liste des musée -->
-		
 		<strong>Region</strong> : <?php echo $donnees['nom_reg']; ?><br />
 		<strong>Departement</strong> : <?php echo $donnees['nom_dep']; ?><br />
 		<strong>Nom du musée</strong> : <?php echo $donnees['nom_du_musee']; ?><br />
@@ -71,22 +60,20 @@
 		<strong>Code Postal</strong> : <?php echo $donnees['cp']; ?><br />
 		<strong>Ville</strong> : <?php echo $donnees['ville']; ?><br />
 		<strong>Téléphone</strong> : <?php echo $donnees['telephone']; ?><br />
-		<strong>Site Web</strong> : <?php echo $donnees['site_web']; ?><br />
+		<strong>Site Web</strong> : <?php echo "<a href='http://$web'>$web</a>"; ?><br />
 		<strong>Fermeture</strong> : <?php echo $donnees['fermeture_annuelle']; ?><br />
 		<strong>Horraire d'ouverture</strong> : <?php echo $donnees['periode_ouverture']; ?>
+
+
+
 		</div>
 		<br/><br/><br/><br/>
 		<?php
 	}
 
-
 $reponse->closeCursor(); // Termine la requête
 
 ?>
-
-
-
-</footer>
 
 </body>
 </html>
