@@ -1,5 +1,5 @@
 # musee-de-france
-Lister les musées de France
 
+Site internet pour référencer les musées de France. 
+On peut faire une recherche depuis la page d'accueil et trouver les resultats sur une autre page.
 
-Pour le fichier musees.sql, il faut d'abord créer une base de données nommé musees.
