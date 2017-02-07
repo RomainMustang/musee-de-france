@@ -40,6 +40,7 @@
 		{
 			do
 			{
+				$id = $donnee['id']
 				$image = $donnee['lien_image'];
 				echo "<img src=$image><br/>";
 				?>
