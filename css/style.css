@@ -1,0 +1,14 @@
+
+.forme{   
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+
+    height: 300px;
+    padding: 0.5%;
+    font-family: 'Vollkorn', serif;
+}
+#margin{
+    margin-left: -8%;
+    margin-top: 10%;
+
