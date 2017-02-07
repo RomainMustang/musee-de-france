@@ -46,20 +46,26 @@
 				<strong>Nom du musée</strong> : <?php echo $donnee['nom_du_musee']; ?><br />
 				<strong>Adresse</strong> : <?php echo $donnee['adresse']; ?><br />
 				<strong>Ville</strong> : <?php echo $donnee['ville']; ?><br />
-				<form action="" method="POST">
-					<button type="submit">Voir +</button>
-				</form>
+				<strong>Region</strong> : <?php echo $donnee['nom_reg']; ?><br />
+				<strong>Departement</strong> : <?php echo $donnee['nom_dep']; ?><br />
+				
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="<?php echo "#".$id ?>">En savoir plus sur le musée</button>
+				<div id="<?php echo "".$id ?>" class="collapse ">
 
+				<strong>Code Postal</strong> : <?php echo $donnee['cp']; ?><br />
+				<strong>Téléphone</strong> : <?php echo $donnee['telephone']; ?><br />
+				<strong>Site Web</strong> : <?php echo $donnee['site_web']; ?><br />
+				<strong>Fermeture</strong> : <?php echo $donnee['fermeture_annuelle']; ?><br />
+				<strong>Horraire d'ouverture</strong> : <?php echo $donnee['periode_ouverture']; ?>
 				</div>
-				<br/><br/><br/><br/>
-				<?php
-
-			} while($donnee = $donnees->fetch());
-		}
-    }
-
-
-$donnees->closeCursor(); // Termine la requête
+			</div>
+		</div>
+		<br/><br/><br/><br/>
+		<?php
+	} while($donnee = $donnees->fetch());
+}
+}
+$donnees->closeCursor();
 
 ?>
 
