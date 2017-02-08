@@ -2,17 +2,25 @@
 <html>
 <head>
 	<title>Musée de France</title>
-	
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<body>
 
-		<form>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<body id="bgrecherche">
+			<div class="row">
+				<div class="col-md-6 menu2 "><a href="index.php" id="liens">Accueil</a></div>
+				<div class="col-md-6 menu1 "><a href="#" id="liens">Musées</a></div>
+			</div>
+
+			<h1 id="titre">Musées de France</h1>
+
+		<form id="rmusee">
 			<input id="search" class="searchbar" name="q" method="GET" type="search" placeholder="Rechercher un musée">
 			<input class="btn btn-success" type="submit" value="Rechercher">
 		</form>
 
+		<div class="col-md-10 col-md-offset-1 contour">
 		<?php
 		include_once('html/simple_html_dom.php');
 
@@ -40,7 +48,7 @@
 					?>
 
 					<div class="col-md-2 col-md-offset-1 forme">
-						<?php 
+						<?php
 						$id = $donnee['id'];
 						$image = $donnee['lien_image'];
 						echo '<img src="'.$image.'"><br/>';
@@ -68,14 +76,16 @@
 										<div id="map<?php echo $id ?>" style="width: 580px; height: 200px;"></div>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+										<button type="button" class="btn btn-success" data-dismiss="modal">Fermer</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+
 				<?php
+
+
 			} while($donnee = $donnees->fetch());
 		}
 	}
@@ -85,6 +95,7 @@ $donnees->closeCursor();
 
 ?>
 
+</div>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -129,4 +140,3 @@ $("#map"+ idParse ).googleMap({
 
 
 </html>
-
