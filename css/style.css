@@ -50,15 +50,16 @@
     {
       text-align: center;
       color: white;
-      font-weight: bold;
+      
       font-size: 5em;
       font-family: 'Coustard', serif;
+
     }
     #taille
     {
-    min-height: 70px;
-    max-height: 70px;
-    max-width: 250px;
+    min-height: 40%;
+    max-height: 40%;
+    max-width: 95%;
     }
 
 /*------------- les classes-------------------*/
@@ -88,7 +89,7 @@
     background-color: #88b14b;
     padding-left: 0;
     padding-right: 0;
-    border-bottom: 1px solid green;
+    box-shadow: 10px 10px 5px black;
   }
 
 .menu2
@@ -100,7 +101,7 @@
     background-color: lightgrey;
     padding-right: 0;
     padding-left: 0;
-    border-bottom: 1px solid green;
+    box-shadow: 10px 10px 5px black;
   }
 
 .container-fluid
@@ -111,7 +112,7 @@
   .contour
   {
     width: 98%;
-    margin-left: 20px;
+    margin-left: 1%;
     padding-top: 1%;
     padding-right: 8%;
     background-color: rgba(80,80,80, 0.3);
@@ -200,4 +201,8 @@ h1
   color: #fff;
   font-size: 2em;
   font-family: 'Coustard', serif;
+}
+html
+{
+overflow-x: hidden;
 }

@@ -26,8 +26,8 @@
      ?>
     <div class="col-md-12">
       <div class="row">
-        <div class="col-md-6 menu1 "><a href="#" id="liens">Accueil</a></div>
-        <div class="col-md-6 menu2 "><a href="recherche.php" id="liens">Musées</a></div>
+        <a href="#" id="liens"><div class="col-md-6 menu1 ">Accueil</div></a>
+        <a href="recherche.php" id="liens"><div class="col-md-6 menu2 ">Musées</div></a>
       </div>
       <div id="myCarousel" class="carousel slide">
         <ol class="carousel-indicators">

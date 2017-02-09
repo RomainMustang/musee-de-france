@@ -3,14 +3,15 @@
 <head>
 	<title>Musée de France</title>
 
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
 	<link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<body id="bgrecherche">
 			<div class="row">
-				<div class="col-md-6 menu2 "><a href="index.php" id="liens">Accueil</a></div>
-				<div class="col-md-6 menu1 "><a href="#" id="liens">Musées</a></div>
+				<a href="index.php" id="liens"><div class="col-md-6 menu2 ">Accueil</div></a>
+				<a href="#" id="liens"><div class="col-md-6 menu1 ">Musées</div></a>
 			</div>
 
 			<h1 id="titre">Musées de France</h1>
@@ -96,6 +97,52 @@ $donnees->closeCursor();
 ?>
 
 </div>
+<footer>
+<div class="footer" id="footer">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+								<h3><a id="liensf" href="mailto:sarah.p@codeur.online"> Py Sarah </a></h3>
+								<ul>
+										<li> <a id="liensf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter">   </i> </a> </li>
+									</ul>
+						</div>
+						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+								<h3><a id="liensf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a></h3>
+								<ul>
+									<li> <a id="liensf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter">   </i> </a> </li>
+
+								</ul>
+						</div>
+						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+								<h3><a id="liensf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a></h3>
+								<ul>
+									<li> <a id="liensf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter">   </i> </a> </li>
+
+								</ul>
+						</div>
+						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+								<h3><a id="liensf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a></h3>
+								<ul>
+									<li> <a id="liensf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter">   </i> </a> </li>
+								</ul>
+						</div>
+				</div>
+				<!--/.row-->
+		</div>
+		<!--/.container-->
+</div>
+<!--/.footer-->
+
+<div class="footer-bottom">
+
+				<p class="pull-left"> Copyright Ministère de la Culture © le logo "musée de France" est une marque déposé son utilisation et sa mise à disposition est autorisée dans la limite des droits accordés par l'article L713-6 alinéa b du Code de la propriété intellectuelle et est reproduite ici en vertu de ces droits. </p>
+				<p>les droits des photos utilisé sur ce site reviennent à leur propriétaire respectif,si toutefois vous désirez retirer une photo vous appartenant, veuillez nous contacter et nous la retirerons immédiatement.</p>
+				</div>
+
+</div>
+<!--/.footer-bottom-->
+</footer>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
