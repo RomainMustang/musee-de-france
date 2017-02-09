@@ -121,8 +121,10 @@
     color: white;
     height: 250px;
     padding: 0.5%;
-    margin-top:5px;
-    bottom: 5px;
+    padding-bottom: 1%;
+    margin-top:1%;
+    bottom: 15px;
+    box-shadow: 10px 5px 5px black;
   }
 
 
@@ -144,6 +146,8 @@ input[type=text]:focus {
 	width: 300px;
 	background-color: #ffffff;
 	border-color: #CBC9C9;
+  box-shadow: 10px 10px 5px black;
+
 
 	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
@@ -154,10 +158,14 @@ input[type=search] {
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
 	width: 200px;
+  box-shadow: 10px 10px 5px black;
+
 
 	-webkit-border-radius: 10em;
 	-moz-border-radius: 10em;
 	border-radius: 10em;
+  box-shadow: 10px 10px 5px black;
+
 
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
