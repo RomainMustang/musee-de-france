@@ -2,17 +2,26 @@
 <html>
 <head>
 	<title>Musée de France</title>
-	
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<body>
 
-		<form>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
+	<link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<body id="bgrecherche">
+			<div class="row">
+				<a href="index.php" id="liens"><div class="col-md-6 menu2 ">Accueil</div></a>
+				<a href="#" id="liens"><div class="col-md-6 menu1 ">Musées</div></a>
+			</div>
+
+			<h1 id="titre">Musées de France</h1>
+
+		<form id="rmusee">
 			<input id="search" class="searchbar" name="q" method="GET" type="search" placeholder="Rechercher un musée">
 			<input class="btn btn-success" type="submit" value="Rechercher">
 		</form>
 
+		<div class="col-md-10 col-md-offset-1 contour">
 		<?php
 		include_once('html/simple_html_dom.php');
 
@@ -40,10 +49,10 @@
 					?>
 
 					<div class="col-md-2 col-md-offset-1 forme">
-						<?php 
+						<?php
 						$id = $donnee['id'];
 						$image = $donnee['lien_image'];
-						echo '<img src="'.$image.'"><br/>';
+						echo '<img id="taille" src="'.$image.'"><br/>';
 						?>
 						<strong>Nom du musée</strong> : <?php echo $donnee['nom_du_musee']; ?><br />
 						<strong>Adresse</strong> : <?php echo $donnee['adresse']; ?><br />
@@ -68,14 +77,16 @@
 										<div id="map<?php echo $id ?>" style="width: 580px; height: 200px;"></div>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+										<button type="button" class="btn btn-success" data-dismiss="modal">Fermer</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+
 				<?php
+
+
 			} while($donnee = $donnees->fetch());
 		}
 	}
@@ -85,6 +96,27 @@ $donnees->closeCursor();
 
 ?>
 
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+						<h3><a id="liensf" href="mailto:sarah.p@codeur.online"> Py Sarah </a><a id="liensf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter"></i></a></h3>
+
+				</div>
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+						<h3><a id="liensf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a><a id="liensf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter"></i></a></h3>
+					</div>
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+						<h3><a id="liensf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a><a id="liensf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter"></i></a></h3>
+				</div>
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+						<h3><a id="liensf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a><a id="liensf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter"></i></a></h3>
+
+			</div>
+		</div
+	</div>
+</footer>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -129,4 +161,3 @@ $("#map"+ idParse ).googleMap({
 
 
 </html>
-
