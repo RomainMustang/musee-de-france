@@ -1,0 +1,158 @@
+body
+  {
+    color: #5a5a5a;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0;
+  }
+
+img
+  {
+    width: auto;
+    height: 98%;
+  }
+footer
+  {
+    font-size: 1.2em;
+  }
+H1
+  {
+    color: #fff;
+    font-size: 2em;
+  }
+
+
+
+.carousel-caption
+  {
+    padding-bottom: 15%;
+    font-size: 3.8em;
+  }
+
+.menu1
+  {
+    color: black;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 0.2%;
+    font-size: 2em;
+    background-color: #88b14b;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.menu2
+  {
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 0.2%;
+    font-size: 2em;
+    background-color: lightgrey;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+.container-fluid
+  {
+    padding: 0;
+    width: 100%;
+  }
+
+#searchForm
+    {
+      position:absolute;
+      top:75%;
+    }
+#liens
+  {
+    text-decoration: none;
+    color: black;
+  }
+  #liensf
+  {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+      text-align: center;
+  }
+
+/*-----------------------------------------------------------*/
+
+input[type=text] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 200px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=text]:focus {
+	width: 300px;
+	background-color: #CBC9C9;
+	border-color: #CBC9C9;
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+.forme{   
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    height: 300px;
+    padding: 0.5%;
+    font-family: 'Vollkorn', serif;
+    margin-left: -12%;
+}
+html{
+    overflow-x: hidden;
+}
+#taille{
+    min-height: 100px;
+    max-height: 100px;
+}
+a#cRetour{
+    height: 50px;
+    width: 45px;
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.25);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 1s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a#cRetour:before{ content: "\25B2"; }
+a#cRetour:hover{
+    height: 50px;
+    width: 50px;
+    background:rgba(0, 0, 0, 1);
+    transition:all ease-in 1s;
+}
+a#cRetour.cInvisible{
+    bottom:-35px;
+    height: 50px;
+    width: 50px;
+    opacity:0;
+    transition:all ease-in 1s;
+}
+
+a#cRetour.cVisible{
+       height: 50px;
+    width: 50px;
+  bottom:20px;
+  opacity:1;
+}
