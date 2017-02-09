@@ -90,27 +90,27 @@
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6 ">
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
                     <h3><a id="liensf" href="mailto:sarah.p@codeur.online"> Py Sarah </a></h3>
                     <ul>
                         <li> <a id="liensf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter">   </i> </a> </li>
                       </ul>
                 </div>
-                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
                     <h3><a id="liensf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a></h3>
                     <ul>
                       <li> <a id="liensf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter">   </i> </a> </li>
 
                     </ul>
                 </div>
-                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
                     <h3><a id="liensf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a></h3>
                     <ul>
                       <li> <a id="liensf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter">   </i> </a> </li>
 
                     </ul>
                 </div>
-                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
                     <h3><a id="liensf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a></h3>
                     <ul>
                       <li> <a id="liensf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter">   </i> </a> </li>
