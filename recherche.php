@@ -97,51 +97,25 @@ $donnees->closeCursor();
 ?>
 
 </div>
-<footer>
-<div class="footer" id="footer">
-		<div class="container">
-				<div class="row">
-						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
-								<h3><a id="liensf" href="mailto:sarah.p@codeur.online"> Py Sarah </a></h3>
-								<ul>
-										<li> <a id="liensf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter">   </i> </a> </li>
-									</ul>
-						</div>
-						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-								<h3><a id="liensf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a></h3>
-								<ul>
-									<li> <a id="liensf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter">   </i> </a> </li>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+						<h3><a id="liensf" href="mailto:sarah.p@codeur.online"> Py Sarah </a><a id="liensf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter"></i></a></h3>
 
-								</ul>
-						</div>
-						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-								<h3><a id="liensf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a></h3>
-								<ul>
-									<li> <a id="liensf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter">   </i> </a> </li>
-
-								</ul>
-						</div>
-						<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-								<h3><a id="liensf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a></h3>
-								<ul>
-									<li> <a id="liensf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter">   </i> </a> </li>
-								</ul>
-						</div>
 				</div>
-				<!--/.row-->
-		</div>
-		<!--/.container-->
-</div>
-<!--/.footer-->
-
-<div class="footer-bottom">
-
-				<p class="pull-left"> Copyright Ministère de la Culture © le logo "musée de France" est une marque déposé son utilisation et sa mise à disposition est autorisée dans la limite des droits accordés par l'article L713-6 alinéa b du Code de la propriété intellectuelle et est reproduite ici en vertu de ces droits. </p>
-				<p>les droits des photos utilisé sur ce site reviennent à leur propriétaire respectif,si toutefois vous désirez retirer une photo vous appartenant, veuillez nous contacter et nous la retirerons immédiatement.</p>
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+						<h3><a id="liensf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a><a id="liensf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter"></i></a></h3>
+					</div>
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+						<h3><a id="liensf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a><a id="liensf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter"></i></a></h3>
 				</div>
+				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+						<h3><a id="liensf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a><a id="liensf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter"></i></a></h3>
 
-</div>
-<!--/.footer-bottom-->
+			</div>
+		</div
+	</div>
 </footer>
 
 </body>
