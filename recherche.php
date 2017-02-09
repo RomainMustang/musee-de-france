@@ -4,7 +4,7 @@
 	<title>Musée de France</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
-	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<body id="bgrecherche">
@@ -51,7 +51,7 @@
 						<?php
 						$id = $donnee['id'];
 						$image = $donnee['lien_image'];
-						echo '<img src="'.$image.'"><br/>';
+						echo '<img id="taille" src="'.$image.'"><br/>';
 						?>
 						<strong>Nom du musée</strong> : <?php echo $donnee['nom_du_musee']; ?><br />
 						<strong>Adresse</strong> : <?php echo $donnee['adresse']; ?><br />
