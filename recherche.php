@@ -18,7 +18,6 @@
 
 		<form id="rmusee">
 			<input id="search" class="searchbar" name="q" method="GET" type="search" placeholder="Rechercher un musée">
-			<input class="btn btn-success" type="submit" value="Rechercher">
 		</form>
 
 		<div class="col-md-10 col-md-offset-1 contour">
