@@ -1,14 +1,254 @@
-
-.forme{   
-    border: 1px solid black;
-    border-radius: 6px;
-    background-color: white;
-
-    height: 300px;
-    padding: 0.5%;
-    font-family: 'Vollkorn', serif;
+#searchForm
+{
+	position:absolute;
+	top:75%;
 }
-#margin{
-    margin-left: -8%;
-    margin-top: 10%;
 
+#size
+{
+	width: auto;
+	height : 98%;
+}
+
+#myCarousel
+{
+	width: auto;
+	height : 98%;	
+}
+
+#linksf
+{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+}
+
+#rmusee
+{
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+#bghome
+{
+	color: #5a5a5a;
+	background-color: black;
+	font-family: 'Raleway', sans-serif;
+	padding: 0 0;
+}
+
+#bgsearch
+{
+	color: #5a5a5a;
+	background-color: #1b1b1b;
+	font-family: 'Raleway', sans-serif;
+	padding: 0 0;
+}
+
+#margin
+{
+	margin-left: -8%;
+	margin-top: 10%;
+}
+
+#title
+{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 5em;
+	font-family: 'Oleo Script', cursive;
+}
+
+/*------------- les classes-------------------*/
+
+.links
+{
+	text-decoration: none;
+	color: black;
+}
+
+.modal-body
+{
+	color: black;
+}
+
+.modal-title
+{
+	color: black;
+}
+
+.carousel-caption
+{
+	padding-bottom: 15%;
+	font-size: 3.8em;
+}
+
+.menu1
+{
+	color: black;
+	text-align: center;
+	padding-bottom: 1%;
+	padding-top: 0.2%;
+	font-size: 2em;
+	background-color: #88b14b;
+	padding-left: 0;
+	padding-right: 0;
+	border-bottom: 1px solid green;
+}
+
+.menu2
+{
+	text-align: center;
+	padding-bottom: 1%;
+	padding-top: 0.2%;
+	font-size: 2em;
+	background-color: lightgrey;
+	padding-right: 0;
+	padding-left: 0;
+	border-bottom: 1px solid green;
+}
+
+.contour
+{
+	/*border: 1px solid black;*/
+	/*    border-radius: 8px;*/
+	width: 98%;
+	margin-left: 20px;
+	padding-top: 1%;
+	padding-right: 8%;
+	background-color: rgba(80,80,80, 0.3);
+}
+
+.forme{
+	/*    border-radius: 8px;*/
+	background-color: darkgrey;
+	color: white;
+	height: 250px;
+	padding: 0.5%;
+	margin-top:5px;
+	bottom: 5px;
+}
+
+.images
+{
+	max-height: 100px;
+	max-width: 100px;
+}
+
+
+-------------------  Les balises ----------------------------------------
+
+body
+{
+	width : 98%;
+}
+
+input[type=text] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 200px;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=text]:focus {
+	width: 300px;
+	background-color: #ffffff;
+	border-color: #CBC9C9;
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input[type=search] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 200px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus {
+	width: 300px;
+	background-color: #ffffff;
+	border-color: #CBC9C9;
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+strong
+{
+	color: green;
+}
+
+footer
+{
+	font-size: 1.3em;
+}
+
+h1
+{
+	color: #fff;
+	font-size: 2em;
+	font-family: 'Oleo Script', cursive;
+}
+
+@media (max-width: 1369px)
+{
+	.forme
+	{   
+		border: 1px solid black;
+		border-radius: 6px;
+		font-size: 20px;
+
+		height: 420px;
+		padding: 0.5%;
+		font-family: 'Vollkorn', serif;
+
+		position : relative;
+		margin : 4%;
+	}
+
+	.place
+	{
+		position : absolute;
+		top : 380px;
+		left: 18px;
+	}
+}
+
+@media (max-width: 1000px)
+{
+	.forme
+	{   height : 450px;
+		font-size : 40px;
+	}
+
+	.place
+	{
+		position : absolute;
+		top : 380px;
+		left: 600px;
+		width: 170px;
+		height : 50px;
+
+		font-size : 25px;
+	}
+}
