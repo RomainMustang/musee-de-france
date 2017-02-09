@@ -5,27 +5,16 @@
   top:75%;
 }
 
-#liens
-{
-  text-decoration: none;
-  color: black;
-}
 
-#liensf
-{
-  text-decoration: none;
-  color: white;
-  font-size: 1.1em;
-}
 
-#rmusee
+#rmuseum
 {
   text-align: center;
   padding-top: 1%;
   padding-bottom: 2%;
 }
 
-#bgaccueil
+#bghome
   {
     color: #5a5a5a;
     background-color: black;
@@ -33,7 +22,7 @@
     padding: 0 0;
   }
 
-#bgrecherche
+#bgsearch
     {
       color: #5a5a5a;
       background-color: #1b1b1b;
@@ -46,7 +35,7 @@
         margin-top: 10%;
     }
 
-#titre
+#title
     {
       text-align: center;
       color: white;
@@ -55,7 +44,7 @@
       font-family: 'Coustard', serif;
 
     }
-    #taille
+#size
     {
     min-height: 40%;
     max-height: 40%;
@@ -63,7 +52,18 @@
     }
 
 /*------------- les classes-------------------*/
+.links
+{
+  text-decoration: none;
+  color: black;
+}
 
+.linksf
+{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
 .modal-body
 {
   color: black;
@@ -90,8 +90,7 @@
     padding-left: 0;
     padding-right: 0;
     box-shadow: 10px 10px 5px black;
-  }
-
+}
 .menu2
   {
     text-align: center;
@@ -104,20 +103,16 @@
     box-shadow: 10px 10px 5px black;
   }
 
-.container-fluid
-  {
-    padding: 0;
-    width: 100%;
-  }
+
   .contour
   {
-    width: 98%;
-    margin-left: 1%;
-    padding-top: 1%;
-    padding-right: 8%;
-    background-color: rgba(80,80,80, 0.3);
+  	width: 98%;
+  	margin-left: 20px;
+  	padding-top: 1%;
+  	padding-right: 8%;
+  	background-color: rgba(80,80,80, 0.3);
   }
-  .forme{
+  .shape{
     background-color: darkgrey;
     color: white;
     height: 250px;
@@ -205,4 +200,50 @@ h1
 html
 {
 overflow-x: hidden;
+}
+body
+{
+	width : 98%;
+}
+@media (max-width: 1369px)
+{
+	.forme
+	{
+		border: 1px solid black;
+		border-radius: 6px;
+		font-size: 20px;
+
+		height: 420px;
+		padding: 0.5%;
+
+
+		position : relative;
+		margin : 4%;
+	}
+
+	.place
+	{
+		position : absolute;
+		top : 380px;
+		left: 18px;
+	}
+}
+
+@media (max-width: 1000px)
+{
+	.forme
+	{   height : 450px;
+		font-size : 40px;
+	}
+
+	.place
+	{
+		position : absolute;
+		top : 380px;
+		left: 600px;
+		width: 170px;
+		height : 50px;
+
+		font-size : 25px;
+	}
 }

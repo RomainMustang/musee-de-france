@@ -8,17 +8,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<body id="bgrecherche">
+	<body id="bgsearch">
 			<div class="row">
-				<a href="index.php" id="liens"><div class="col-md-6 menu2 ">Accueil</div></a>
-				<a href="#" id="liens"><div class="col-md-6 menu1 ">Musées</div></a>
+				<a href="index.php" class="links"><div class="col-md-6 menu2 ">Accueil</div></a>
+				<a href="#" class="links"><div class="col-md-6 menu1 ">Musées</div></a>
 			</div>
 
-			<h1 id="titre">Musées de France</h1>
+			<h1 id="title">Musées de France</h1>
 
-		<form id="rmusee">
+		<form id="rmuseum">
 			<input id="search" class="searchbar" name="q" method="GET" type="search" placeholder="Rechercher un musée">
-			<input class="btn btn-success" type="submit" value="Rechercher">
 		</form>
 
 		<div class="col-md-10 col-md-offset-1 contour">
@@ -48,11 +47,11 @@
 				{
 					?>
 
-					<div class="col-md-2 col-md-offset-1 forme">
+					<div class="col-md-2 col-md-offset-1 shape">
 						<?php
 						$id = $donnee['id'];
 						$image = $donnee['lien_image'];
-						echo '<img id="taille" src="'.$image.'"><br/>';
+						echo '<img id="size" src="'.$image.'"><br/>';
 						?>
 						<strong>Nom du musée</strong> : <?php echo $donnee['nom_du_musee']; ?><br />
 						<strong>Adresse</strong> : <?php echo $donnee['adresse']; ?><br />
@@ -73,7 +72,7 @@
 										<strong>Téléphone</strong> : <?php echo $donnee['telephone']; ?><br />
 										<strong>Site Web</strong> : <?php echo $donnee['site_web']; ?><br />
 										<strong>Fermeture</strong> : <?php echo $donnee['fermeture_annuelle']; ?><br />
-										<strong>Horraire d'ouverture</strong> : <?php echo $donnee['periode_ouverture']; ?>
+										<strong>Horaire d'ouverture</strong> : <?php echo $donnee['periode_ouverture']; ?>
 										<div id="map<?php echo $id ?>" style="width: 580px; height: 200px;"></div>
 									</div>
 									<div class="modal-footer">
@@ -100,18 +99,18 @@ $donnees->closeCursor();
 <footer class="footer">
 	<div class="container">
 		<div class="row">
-				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
-						<h3><a id="liensf" href="mailto:sarah.p@codeur.online"> Py Sarah </a><a id="liensf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter"></i></a></h3>
-
-				</div>
 				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-						<h3><a id="liensf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a><a id="liensf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter"></i></a></h3>
+						<h3><a class="linksf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a><a class="linksf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter"></i></a></h3>
 					</div>
 				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-						<h3><a id="liensf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a><a id="liensf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter"></i></a></h3>
+						<h3><a class="linksf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a><a class="linksf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter"></i></a></h3>
 				</div>
 				<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-						<h3><a id="liensf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a><a id="liensf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter"></i></a></h3>
+						<h3><a class="linksf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a><a class="linksf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter"></i></a></h3>
+
+			</div>
+			<div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+				<h3><a class="linksf" href="mailto:sarah.p@codeur.online"> Py Sarah </a><a class="linksf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter"></i></a></h3>
 
 			</div>
 		</div

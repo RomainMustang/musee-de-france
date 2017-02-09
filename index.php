@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Musée de france - Accueil</title>
   </head>
-  <body id="bgaccueil" style ="width: 100%;">
+  <body id="bghome" style ="width: 100%;">
     <?php
     try{
   		$bdd = new PDO('mysql:host=localhost;dbname=musees;charset=utf8', 'root', '');
@@ -26,8 +26,8 @@
      ?>
     <div class="col-md-12" style="width 70%;" >
       <div class="row">
-        <a href="#" id="liens"><div class="col-md-6 menu1 ">Accueil</div></a>
-        <a href="recherche.php" id="liens"><div class="col-md-6 menu2 ">Musées</div></a>
+        <a href="#" class="links"><div class="col-md-6 menu1 ">Accueil</div></a>
+        <a href="recherche.php" class="links"><div class="col-md-6 menu2 ">Musées</div></a>
       </div>
       <div id="myCarousel" class="carousel slide">
         <ol class="carousel-indicators">
@@ -90,17 +90,17 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
-                <h3><a id="liensf" href="mailto:sarah.p@codeur.online"> Py Sarah </a><a id="liensf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter"></i></a></h3>
+                <h3><a class="linksf" href="mailto:sarah.p@codeur.online"> Py Sarah </a><a class="linksf" href="https://twitter.com/SarahConnor700"> <i class="fa fa-twitter"></i></a></h3>
 
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-                <h3><a id="liensf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a><a id="liensf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter"></i></a></h3>
+                <h3><a class="linksf" href="mailto:vincent.g@codeur.online"> Gerard Vincent </a><a class="linksf" href="https://twitter.com/VincentTime0"> <i class="fa fa-twitter"></i></a></h3>
               </div>
             <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-                <h3><a id="liensf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a><a id="liensf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter"></i></a></h3>
+                <h3><a class="linksf" href="mailto:romain.g@codeur.online"> Grandjean Romain </a><a class="linksf" href="https://twitter.com/RomainMustang"> <i class="fa fa-twitter"></i></a></h3>
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
-                <h3><a id="liensf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a><a id="liensf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter"></i></a></h3>
+                <h3><a class="linksf" href="mailto:kevin.b@codeur.online"> Bourlier Kevin </a><a class="linksf" href="https://twitter.com/dantikevin"> <i class="fa fa-twitter"></i></a></h3>
 
           </div>
         </div
